@@ -25,16 +25,14 @@ header {
     text-align: center;
 }
 
-.menu {
-    /* margin: 0;
-    padding: 0; */
-    width: 100%;
-    background-color: #379Ef5;
+.menu ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
 }
 
 .menu ul li {
     width: 100%;
-    height: 50px;
 }
 
 .menu ul li a {
@@ -46,12 +44,8 @@ header {
     display: block;
     color: #000;
 }
-.menu ul li ul {
-    margin-top: -50px;
-}
 
 .menu ul li ul li {
-    margin-left: 100%;
     width: 100%;
     height: 30px;
     background-color: #9aabf8;
@@ -62,6 +56,7 @@ header {
     height: 30px;
     line-height: 30px;
     text-align: center;
+    text-decoration: none;
     display: block;
     color: white;
 }
@@ -73,7 +68,7 @@ header {
 }
 
 .menu ul li ul li a:hover {
-    background-color: #fff;
+    background-color: #e2d1d1;
     color: #000;
 }
 .menu ul li ul {
