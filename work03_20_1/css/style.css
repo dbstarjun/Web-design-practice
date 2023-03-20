@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+header > div {
+    float: left;
+    height: 100px;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 50px;
+}
+.menu {
+    width: 800px;
+    float: right;
+    margin-right: 50px;
+    padding-top: 50px;
+    z-index: 999;
+}
+.main-menu {
+    height: 50px;
+    width: 800px;
+    background-color: #82bdf0;   
+}
+.sub-menu {
+    width: 1200px;
+    background-color: #2f83b7;
+    height: 130px;
+    margin-left: -350px;
+    display: none;
+}
+
+.sub-menu div {
+    float: right;
+    width: 800px;
+    margin-right: 50px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+.main-menu ul li {
+    width: 25%;
+    height: 50px;
+    float: left;
+}
+
+.main-menu ul li a {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    color: black;
+    font-weight: bold;
+}
+.sub-menu ul li {
+    width: 25%;
+    height: 30px;
+    float: left;
+}
+.sub-menu ul li ul li {
+    width: 100%;
+    height: 30px;
+}
+.sub-menu ul li ul li a {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    color: white;
+}
+.main-menu ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+.sub-menu ul li ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.slide {
+    width: 100%;
+    height: 300px;
+    z-index: -99;
+    position: relative;
+    overflow: hidden;
+}
+.slide > img {
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+.slide > img:first-child {
+    left: 0;
+}
+.main {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.main > div {
+    width: 400px;
+    height: 200px;
+    padding-top: 10px;
+    float: left;
+}
+.main .gallery {
+    width: 400px;
+    padding: 10px 10px 0 10px;
+}
+.main .tab {
+    width: 80px;
+    height: 30px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 0;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+    z-index: 999;
+    position: relative;
+}
+.main .gallery .tab {
+    background-color: #ccc;
+}
+.main .notice .tab {
+    background-color: #fff;
+}
+.main .box {
+    width: 100%;
+    height: 160px;
+    border: 1px solid #000;
+    margin-top: -1px;
+}
+.main .notice ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+.main .notice ul li {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #000;
+}
+.main .notice .box {
+    padding: 5px;
+}
+.main .notice ul li:first-child {
+    width: 250px;
+}
+.main .notice ul li:last-child {
+    width: 120px;
+}
+.main .gallery .box {
+    text-align: center;
+    padding-top: 20px;
+}
+.main .links {
+    width: 300px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#pop {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #000;
+    background-color: #fff;
+    z-index: 999;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#pop p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.exit {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#pop .title {
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #000;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #c4dcf8;
+    position: relative;
+}
+footer > div {
+    float: left;
+    height: 100px;
+    padding-right: 10px;
+}
+footer .f-menu {
+    width: 300px;
+    margin: 10px 10px;
+}
+footer .copy {
+    width: 600px;
+    position: absolute;
+    left: 400px;
+    line-height: 100px;
+}
+footer .family {
+    width: 150px;
+    position: absolute;
+    right: 10px;
+}
