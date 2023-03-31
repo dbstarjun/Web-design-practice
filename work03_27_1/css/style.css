@@ -54,8 +54,9 @@ header {
 }
 
 .slide {
-    width: 1000px;
+    width: 1000px; 
     height: 300px;
+    margin-left: 200px;
     overflow: hidden;
     position: relative;
 }
@@ -63,11 +64,14 @@ header {
     width: 1000px;
     height: 100%;
     position: absolute;
-    top: -100%;
+    /* top: -100%; */
     z-index: 0;
+    opacity: 0;
 }
 .slide > img:first-child {
     top: 0;
+    left: 0;
+    opacity: 1;
 }
 
 .contents {
@@ -135,7 +139,8 @@ header {
 }
 
 .gallery img {
-    margin: 15px 9px 0 9px;
+    /* margin: 15px 9px 0 9px; */
+    margin: auto;
 }
 
 .link > a {
@@ -154,6 +159,7 @@ header {
     background-color: #fff;
     transform: translate(-50%, -50%);
     display: none;
+    z-index: 999999;
 }
 #pop p {
     font-size: 20px;
