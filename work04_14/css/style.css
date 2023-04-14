@@ -108,3 +108,89 @@ header > div {
 .slide>img:first-child {
     left: 0;
 }
+
+.content{
+    display: flex;
+}
+.content >*{
+    width: 400px;
+}
+
+.notice{
+    padding:10px;
+}
+.content h3{
+    font-size: 18px; 
+    font-weight: 600; 
+    margin-bottom: 10px;
+}
+.notice li{ 
+    display: flex; 
+    line-height: 2;
+}
+.notice li a{
+    display: inline-block; 
+    width: 250px; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+.notice li span{
+    margin-left: auto;
+}
+.notice li:hover{
+    background: rgb(253, 181, 181);
+}
+
+.gallery{
+    padding:10px;
+}
+.gallery ul{
+    display: flex; 
+    justify-content: space-between;
+}
+.gallery li{
+    display: inline-block; 
+    width: 32%;
+}
+.gallery li a img{
+    width: 100%; 
+    opacity: 0.8;
+}
+.gallery li a img:hover{
+    opacity: 1;
+}
+
+.link{
+    position:relative;
+}
+.link h2{
+    position:absolute; 
+    left:50%; 
+    top:50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 18px; 
+    font-weight: 600; 
+    background: #fff; 
+    padding:10px;
+}
+
+footer{
+    display: flex; 
+    height: 100px; 
+    text-align: center;
+}
+footer .bottomLeft{
+    width: 90%;
+}
+.bottomLeft >*{
+    height: 50%; 
+    line-height: 50px;
+}
+.bottomMenu{
+    display: flex; 
+    justify-content: space-around;
+}
+.familySite{
+    line-height: 100px;
+}
