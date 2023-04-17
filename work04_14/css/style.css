@@ -20,7 +20,9 @@ header > div {
 }
 .logo {
     width: 200px;
-    padding: 50px;
+    height: 100px;
+    /* padding: 50px; */
+    background-color: #c76161;
 }
 .menu {
     width: 800px;
