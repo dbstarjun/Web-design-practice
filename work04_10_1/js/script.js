@@ -1,36 +1,40 @@
-$(function(){
+$(function () {
 
     //header menu------------------------------------
-    $('li.lv1').mouseenter(function(){
+    $('li.lv1').mouseenter(function () {
         $(this).find('ul.lv2').stop().slideDown()
     })
-    $('li.lv1').mouseleave(function(){
+    $('li.lv1').mouseleave(function () {
         $('ul.lv2').stop().slideUp()
     })
-    
-    //slide------------------------------------
-    $('.slide:gt(0)').hide()
-    setInterval(function(){
-        $('.slide:first').fadeOut(1500).next().fadeIn(1500)
-        $('.slide:first').appendTo('.slideWrap')
-    },3000)
-    
-    //tab------------------------------------
-    $('.tabMenu li').click(function(){
-        $('.tabMenu li').removeClass('on')
-        $(this).addClass('on')
-    
-        var idx=$(this).index()
-        $('.tabItem >*').hide().removeClass('on')
-        $('.tabItem >*').eq(idx).show().addClass('on')
-    })
-    
+    var slide = $(".slide>img");
+    var sno = 0;
+    var eno = slide.length - 1;
+    var timer = setInterval("autosilde()", 3000);
+
+    function autosilde() {
+        $(slide[sno]).stop().animate({
+            opacity: 0
+        }, 1000, function () {
+            // $(this).css({  opacity: "100%" });
+        });
+        sno++;
+        if (sno > eno) {
+            sno = 0;
+        }
+        $(slide[sno]).stop().animate({
+            opacity: 1
+        }, 1000)
+    }
+
+
+
     //popUpBox------------------------------------
-    $('.notice li:nth-child(1)').click(function(){
+    $('.notice li:nth-child(1)').click(function () {
         $('.popUpBox').show()
     })
-    $('.popUpBox button').click(function(){
+    $('.popUpBox button').click(function () {
         $('.popUpBox').hide()
     })
-    
-    })
+
+})

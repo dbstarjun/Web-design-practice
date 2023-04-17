@@ -85,53 +85,51 @@ header ul a {
     background: #fff;
 }
 
-li.lv1 {
+li.mainmenu {
     position: relative;
     width: 25%;
 }
 
-li.lv1>a {
+li.mainmenu>a {
     font-size: 18px;
     font-weight: 600;
 }
 
-ul.lv2 {
+ul.submenu {
     position: absolute;
     width: 100%;
     z-index: 998;
     display: none;
 }
 
-li.lv1:hover>a {
+li.mainmenu:hover>a {
     color: #fff;
     background: rgb(26, 96, 161);
 }
 
-ul.lv2 li:hover>a {
+ul.submenu li:hover>a {
     color: #fff;
     background: rgb(88, 139, 216);
 }
 
 
-.slideContainer {
-    width: 1200px;
+.slide {
+    width: 100%;
     height: 300px;
-}
-
-.sldieWrap {
+    z-index: -99;
+    overflow: hidden;
     position: relative;
 }
 
-.slide {
+.slide>img {
+    width: 1200px;
+    height: 300px;
     position: absolute;
-}
-
-.slide p {
-    position: absolute;
-    left: 0;
+    left: -100%;
     top: 0;
-    background: rgb(181, 207, 247);
-    padding: 10px 20px;
+}
+.slide>img:first-child {
+    left: 0;
 }
 
 
