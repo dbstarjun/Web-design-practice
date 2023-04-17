@@ -29,4 +29,4 @@ function openPop(){
 }
 function closePop(){
     $(".pop").hide();
-}1
+}

@@ -104,11 +104,12 @@ header > div {
     width: 1200px;
     height: 300px;
     position: absolute;
-    left: -100%;
+    opacity: 0;
+    left: 0;
     top: 0;
 }
 .slide>img:first-child {
-    left: 0;
+    opacity: 1;
 }
 
 .content{

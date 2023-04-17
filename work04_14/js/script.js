@@ -11,17 +11,17 @@ var sno = 0;
 var eno = slide.length - 1;
 var timer = setInterval("autoslide()",3000);
 
-function autoslide() {
+function autoslide(){
     $(slide[sno]).animate({
-        left: "100%"
-    },1000,function() {
-        $(this).css({left:"-100%"});
-    });
+        opacity:"0"
+    }, 1000);
     sno++;
-    if(sno > eno) sno = 0;
+    if(sno > eno){
+        sno = 0;
+    }
     $(slide[sno]).animate({
-        left:"0"
-    },1000);
+        opacity:"1"
+    }, 1000)
 }
 
 function openPop() {
