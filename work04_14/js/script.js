@@ -6,23 +6,27 @@ $(".menu").hover (
     }
 );
 
-var slide = $(".slide>img");
+var slide = $(".slide > img");
 var sno = 0;
 var eno = slide.length - 1;
-var timer = setInterval("autosilde()", 3000);
+var timer = setInterval("autoslide()",3000);
 
-function autosilde() {
-    $(slide[sno]).stop().animate({
-        opacity: 0
-    }, 1000, function () {
-        // $(this).css({  opacity: "100%" });
+function autoslide() {
+    $(slide[sno]).animate({
+        left: "100%"
+    },1000,function() {
+        $(this).css({left:"-100%"});
     });
     sno++;
-    if (sno > eno) {
-        sno = 0;
-    }
-    $(slide[sno]).stop().animate({
-        opacity: 1
-    }, 1000)
+    if(sno > eno) sno = 0;
+    $(slide[sno]).animate({
+        left:"0"
+    },1000);
 }
 
+function openPop() {
+    $("#pop").show("slow");
+}
+function closePop() {
+    $("#pop").hide("fast");
+}
