@@ -1,17 +1,18 @@
-var slide = $("");
+// 이미지만 이동
+var slide = $(".slide > div");
 var sno = 0;
 var eno = slide.length -1;
 var timer = setInterval("autoslide()", 3000);
 
 function autoslide() {
     $(slide[sno]).animate({
-        left:"100%"
+        left:"-100%"
     },1000, function(){
-        $(this).css({left:"-100%"})
-    },1000);
+        $(this).css({left:"100%"});
+    });
     sno++;
     if(eno < sno) sno =0;
     $(slide[sno]).animate({
-        left:"100%"
+        left:"0"
     },1000);
 }
