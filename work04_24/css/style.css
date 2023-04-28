@@ -1,32 +1,258 @@
+@charset "UTF-8";
 
-.slide {
-    position: relative;
+
+*{
+    padding:0; 
+    margin:0; 
+    box-sizing:border-box; 
+    color:#333333; 
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none; 
+    color:inherit;
+}
+
+img{
+    vertical-align: top;
+}
+
+header{
+    width: 100%;
+    height: 100px; 
+    background: rgb(208, 232, 252);
+}
+
+.inner{
+    display: flex; 
+    align-items: center; 
     width: 1200px; 
-    height: 300px;
-    z-index: 99;
+    height: 100px; 
+    margin: 0 auto;
+}
+
+header .inner{
+    position:relative;
+}
+header h1{
+    width: 200px; 
+    height: 40px; 
+    font-size: 0px; 
+    color:transparent;
+}
+
+.headerBg{
+    position:absolute; 
+    left:520px; 
+    top:72px; 
+    width: 600px; 
+    height: 164px; 
+    background: #fff; 
+    z-index:999; 
+    display: none;
+}
+
+header nav >ul{
+    display: flex; 
+    width: 600px; 
+    margin: 0 0 0 320px;
+}
+
+header nav a{
+    display: block; 
+    text-align: center; 
+    background: #fff; 
+    padding:10px;
+}
+
+li.lv1{
+    position:relative; 
+    width: 25%;
+}
+
+li.lv1 >a{
+    font-size: 18px; 
+    font-weight: 600;
+}
+ul.lv2{
+    position:absolute; 
+    width: 100%; 
+    z-index:998; 
+    display: none;
+}
+
+li.lv1:hover >a{
+    color:#fff; 
+    background: rgb(63, 143, 209);
+}
+
+ul.lv2 li:hover a{
+    color:#fff; 
+    background: rgb(128, 185, 233);
+}
+
+.main{
+    position:relative; 
+    width: 1200px; 
+    height: 500px; 
+    margin: 0 auto;
+}
+
+.popUpBox{
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    z-index:999; 
+    display: none;
+}
+
+.popUp{
+    position:absolute; 
+    width:600px; 
+    left:50%; 
+    top:50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    line-height: 2; 
+    border: 1px solid #000; 
+    background: #fff; 
+    padding:20px;
+}
+
+.popUp p{
+    font-size: 15px; 
+    margin-top: 10px;
+}
+
+.popUp div{
+    margin-top: 30px;
+}
+
+.popUp button{
+    float: right; 
+    padding:4px; 
+    cursor: pointer;
+}
+
+.slideContainer{
+    width: 1200px; 
+    height: 300px; 
     overflow: hidden;
 }
 
-.slide > div {
-    position: absolute;
-    width: 1200px;
-    height: 300px;
-    left: -100%;
-    top: 0;
+.slideWrap{
+    width: 300%;
 }
 
-.slide > div > p {
-    display: block;
-    background-color: #fff;
-    position: absolute;
-    z-index: 9;
+.slide{
+    position:relative;
+    float: left;
 }
 
-.slide > div > img {
-    position: absolute;
-    z-index: -99;
+.slide p{
+    position:absolute; 
+    left:0; 
+    top:0; background: rgb(166, 213, 252); 
+    padding:10px 20px;
 }
 
-.slide > div > img:first-child {
-    left: 0;
+.content{
+    display: flex;
+}
+
+.content >*{
+    width: 400px; 
+    height: 200px;
+}
+
+.tabMenu li{
+    display: inline-block; 
+    font-size: 18px; 
+    font-weight: 600; 
+    padding:10px;
+}
+
+.tabMenu li.on{
+    background: rgb(229, 241, 251);
+}
+
+.tabItem >*{
+    height: 156px; 
+    padding:10px;
+}
+
+.tabItem >*.on{
+    background: rgb(229, 241, 251);
+}
+
+.notice li{
+    display: flex; 
+    line-height: 2.2;
+}
+
+.notice li a{
+    display: inline-block; 
+    width: 260px; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.notice li span{
+    margin-left: auto;
+}
+
+.notice li:hover{
+    text-decoration: underline;
+}
+
+.gallery{
+    display: none;
+}
+.gallery li{
+    display: inline-block; 
+    width: 32%; 
+    margin-top: 8px;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.banner, .link{
+    position:relative;
+}
+
+.banner h2, .link h2{
+    position:absolute; 
+    left:50%; 
+    top:50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 18px; 
+    font-weight: 600; 
+    background: #fff; 
+    padding:10px;
+}
+
+footer{
+    width: 100%; 
+    height: 100px; 
+    background: rgb(208, 232, 252);
+}
+footer .bottomRight{
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 90%; 
+    text-align: center;
+}
+.bottomRight >*{
+    width: 100%; 
+    height: 50px; 
+    line-height: 50px;
+}
+.bottomMenu li{
+    display: inline-block; 
+    width: 30%;
 }
