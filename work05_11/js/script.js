@@ -1,13 +1,13 @@
-$("menu ul li").hover(
+$(".menu ul li").hover(
     function() {
-        $("this").children("ul").slideDown(slow);
+        $(this).children("ul").slideDown("fast");
     }, function() {
-        $("this").children("ul").slideUp(slow);
+        $(this). children("ul").slideUp("slow");
     }
 );
 
 
-var slide = $("slide > img");
+var slide = $(".slide > img");
 var sno = 0;
 var eno = slide.length-1;
 var timer = setInterval("autoslide()", 3000);

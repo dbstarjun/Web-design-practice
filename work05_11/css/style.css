@@ -34,13 +34,12 @@ header {
     margin: 0 auto;
 }
 
-
 .menu ul li {
     width: 100%;
     height: 50px;
 }
 
-.menu ul li a  {
+.menu ul li a {
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -49,38 +48,41 @@ header {
     color: #000;
 }
 
-
 .menu ul li ul {
+    position: relative;
+    display: none;
     margin-top: -50px;
+    z-index: 99;
 }
 
 .menu ul li ul li {
     margin-left: 100%;
     width: 100%;
     height: 30px;
-    background-color: blue;
+    background-color: aqua;
 }
 
-.menu ul li ul li a {
+.menu ul li ul li a{
     width: 100%;
     height: 30px;
     line-height: 30px;
     text-align: center;
     display: block;
-    color: hotpink;
-}
-
-.menu ul li ul {
-    display: none;
+    color: white;
 }
 
 .menu ul li a:hover {
-    background-color: green;
+    background-color: blue;
+    color: #000;
 }
 
+.menu ul li ul li a:hover {
+    background-color: orange;
+    color: #000;
+}
 
 .slide {
-    width: 700px;
+    width: 800spx;
     height: 350px;
     overflow: hidden;
     position: relative;
@@ -88,6 +90,8 @@ header {
 
 .slide > img {
     position: absolute;
+    width: 100%;
+    height: 100%;
     left: -100%;
     top: 0;
 }
@@ -97,24 +101,90 @@ header {
 }
 
 .main {
-    width: 700px;
+    width: 800px;
     height: 200px;
     display: flex;
-    background-color: yellow;
+    position: relative;
 }
 
+.notice {
+    width: 350px;
+    position: absolute;
+    position: relative;
+}
+
+.tab {
+    height: 30px;
+    width: 80px;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    z-index: 999;
+}
+
+.notice ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 5px;
+    float: left;
+    
+}
+
+.notice ul li a {
+    color: #000;
+}
+
+.gallery {
+    width: 250px;
+}
+
+.gallery > img {
+    padding-top: 50px;
+    float: left;
+    cursor: pointer;
+}
+
+.banner {
+    width: ;
+    height: 100%;
+}
 
 footer {
-    width: 700px;
+    width: 800px;
     height: 100px;
-    background-color: aqua;
-    display: flex;
+    left:200px;
+    position: relative;
 }
 
 .footer-logo {
     width: 200px;
     height: 100px;
     text-align: center;
-    float: left;
     padding-top: 30px;
+    position: fixed;
 }
+
+.footer-menu {
+    padding-top: 15px;
+    display: flex;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.footer-menu > p {
+    color: #000;
+}
+
+.footertext {
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    color: #000;
+    margin-left: 200px;
+}
+
