@@ -1,6 +1,6 @@
 $(".menu ul li").hover(
     function() {
-        $(this).children("ul").slideDown("fast");
+        $(this).children("ul").slideDown("slow");
     }, function() {
         $(this). children("ul").slideUp("slow");
     }

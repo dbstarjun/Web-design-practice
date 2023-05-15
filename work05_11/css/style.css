@@ -59,7 +59,7 @@ header {
     margin-left: 100%;
     width: 100%;
     height: 30px;
-    background-color: aqua;
+    background-color: rgb(23, 155, 23);
 }
 
 .menu ul li ul li a{
@@ -72,12 +72,12 @@ header {
 }
 
 .menu ul li a:hover {
-    background-color: blue;
-    color: #000;
+    background-color: green;
+    color: white;
 }
 
 .menu ul li ul li a:hover {
-    background-color: orange;
+    background-color: white;
     color: #000;
 }
 
@@ -139,10 +139,8 @@ header {
     width: 250px;
 }
 
-.gallery > img {
-    padding-top: 50px;
-    float: left;
-    cursor: pointer;
+.box  > img {
+    padding-top: 30px;
 }
 
 .banner {
