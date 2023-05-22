@@ -1,23 +1,14 @@
 @charset "UTF-8";
 
-
 *{
     padding:0; 
-    margin:0; 
+    margin:0;
+    list-style: none;
+    text-decoration: none; 
     box-sizing:border-box; 
     color:#333333; 
 }
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none; 
-    color:inherit;
-}
 
-img{
-    vertical-align: top;
-}
 
 header{
     width: 100%;
@@ -67,28 +58,36 @@ header nav a{
     padding:10px;
 }
 
-li.lv1{
+li.main-menu{
     position:relative; 
     width: 25%;
 }
 
-li.lv1 >a{
+li.main-menu >a{
     font-size: 18px; 
     font-weight: 600;
 }
-ul.lv2{
+ul.sub-menu{
     position:absolute; 
     width: 100%; 
     z-index:998; 
+    height: 164px;
     display: none;
+    background-color: white;
 }
 
-li.lv1:hover >a{
+ul.sub-menu li a{
+    display: block;
+    color: #000;
+}
+
+
+li.main-menu a:hover{
     color:#fff; 
     background: rgb(63, 143, 209);
 }
 
-ul.lv2 li:hover a{
+ul.sub-menu li a:hover{
     color:#fff; 
     background: rgb(128, 185, 233);
 }

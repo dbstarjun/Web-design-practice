@@ -1,8 +1,8 @@
 $(".menu ul li").hover(
     function() {
-        $(this).children("ul").slideDown("slow");
+        $(this).children("ul").stop().slideDown("slow");
     }, function() {
-        $(this). children("ul").slideUp("slow");
+        $(this). children("ul").stop().slideUp("slow");
     }
 );
 

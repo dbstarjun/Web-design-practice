@@ -1,9 +1,9 @@
 $(function(){
-    $('li.lv1').mouseenter(function(){
-        $('ul.lv2, .headerBg').stop().slideDown()
+    $('li.main-menu').mouseenter(function(){
+        $('ul.sub-menu').stop().slideDown()
     })
-    $('li.lv1').mouseleave(function(){
-        $('ul.lv2, .headerBg').stop().slideUp()
+    $('li.main-menu').mouseleave(function(){
+        $('ul.sub-menu').stop().slideUp()
     })
     
 
