@@ -82,7 +82,7 @@ header {
 }
 
 .slide {
-    width: 800spx;
+    width: 800px;
     height: 350px;
     overflow: hidden;
     position: relative;
@@ -143,8 +143,12 @@ header {
     padding-top: 30px;
 }
 
+.box  > img:hover {
+    opacity: 1;
+}
+
 .banner {
-    width: ;
+    width: 200px;
     height: 100%;
 }
 
