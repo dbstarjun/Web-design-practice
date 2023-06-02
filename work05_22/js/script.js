@@ -24,34 +24,11 @@ function autoslide() {
     }, 1000)      
 }
 
-$(".tab1").click(
-    function() {
-    $(this).css({
-        "boder-bottom": "0",
-        "background-color":"white"
-    });
-    $(".tab2").css({
-        "boder-bottom": "1px solid #000",
-        "background-color":"blue"
-    });
-    $(".gallery").hide();
-    $(".news").show();
-});
 
-$(".tab2").click(function() {
-    $(this).css({
-        "boder-bottom": "0",
-        "background-color":"white"
-    });
-    $(".tab1").css({
-        "boder-bottom": "1px solid #000",
-        "background-color":"blue"
-    });
-    $(".news").hide();
-    $(".gallery").show();
-});
-
-
-function popup() {
+function openPop() {
     $("#pop").show("");
+}
+
+function closePop() {
+    $("#pop").hide("");
 }

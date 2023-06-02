@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: skyblue;
+    background-color: black;
     width: 100%;
     height: 100px;   
 }
@@ -131,111 +131,128 @@ header {
     display: flex;
 }
 
-.box {
-    width: 400px;
-    height: 200px;
-    padding: 3px 20px 0 0;
-    float: left;
-}
-
 .tab {
-    height: 50px;
-}
-
-.tab > div {
-    float: left;
-    height: 50px;
-    width: 80px;
-    border: 1px solid #333;
-    line-height: 50px;
-    text-align: center;
-}
-
-.tab .tab1 {
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
     border-bottom: 0;
+    border-right: 1px solid #333;
+    height: 30px;
+    width: 80px;
+    position: relative;
 }
 
-.tab .tab2 {
-    border-left: 0;
+.notice {
+    width: 400px;
+    height: 100%;
+    left: 50px;
+    /* background-color: black; */
 }
 
-.news, .gallery {
-    margin-top: -1px;
-    /* width: 100%; */
-    height: 130px;
-    border: 1px solid #333;
-    padding-left: 5px;
+.notice .tab {
+    background-color: white;
 }
 
-.news ul li {
+.notice ul li {
+    height: 40px;
+    line-height: 45px;
+    padding: 5px;
     float: left;
-    height: 25px;
-    line-height: 25px;
     border-bottom: 1px solid #333;
 }
 
-.news ul li:first-child {
-    width: 260px;
-    padding-left: 5px;
+.notice ul li:first-child {
+    width: 250px;
 }
 
-
-.news ul li:last-child {
-    width: 100px;
-    text-align: right;
-    padding-right: 5px;
+.box {
+    border: 1px solid #333;
+    width: 400px;
+    height: 170px;
+    margin-top: -1px;
 }
 
 .gallery {
-    display: none;
+    left: 500px;
+    width: 500px;
 }
 
 .gallery img {
-    margin: 15px 9px 0 9px;
+    float: left;
+    cursor: pointer;
 }
 
-.test2 {
-    width: 400px;
+#pop {
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    z-index: 999;
+    display: none;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+}
+
+.poph2 {
+    width: 600px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #333;
+}
+
+.pop_p {
+    width: 600px;
     height: 200px;
-    background-color: pink;
+    border-bottom: 1px solid #333;
 }
 
-.test3 {
-    width: 400px;
-    height: 200px;
-    background-color: azure;
+.pop_p > p {
+    padding-top: 30px;
+    padding-left: 20px;
 }
 
+.esc {
+    float: right;
+    margin: 10px 20px 0px 0px;
+}
 
 footer {
-    background-color: skyblue;
+    background-color: black;
     width: 100%;
     height: 100px;   
 }
 
-.footerlogo {
-    width: 200px;
-    height: 100px;
-    float: left;
-}
-
-.footermenu {
-    width: 1000px;
-    height: 50px;
-    float: right;
-    display: flex;
-    justify-content: space-around;
-}
-
-.footermenu > a {
-    text-align: center;
-    line-height: 50px;
-}
-
 .copyright {
     width: 1000px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+
+.copyright > p {
+    color: white;
+}
+
+.sns{
+    width: 200px;
     height: 50px;
     float: right;
-    text-align: center;
-    line-height: 50px;
+    background-color: rebeccapurple;
+}
+
+.site {
+    width: 200px;
+    height: 50px;
+    float: right;
+}
+
+
+
+.op {
+    margin: 0 auto;
 }
