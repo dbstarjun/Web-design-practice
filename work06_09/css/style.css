@@ -27,26 +27,45 @@ header {
 }
 
 .main {
-    width: calc(100% - 200);
+    width: calc(100% - 200px);
     height: 850px;
+    float: right;
     background-color: blue;
 }
 
 .link{
-    float: right;
+    position: fixed;
+    right:0 ;
     background-color: bisque;
     width: 100px;
     height: 300px; 
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
 .slide {
     width: 100%;
     height: 400px;
+    overflow: hidden;
     background-color: green;
 }
 
+
+.slide > img {
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 100%;
+}
+
+.slide > img:last-child {
+    left: 0;
+}
+  
 .banner {
     width: 100%;
+    float: right;
     height: 200px;
     background-color: yellowgreen;
 }
@@ -54,10 +73,12 @@ header {
 .contents {
     width: 100%;
     height: 250px;
+    float: right;
     background-color: greenyellow;
 }
 
 footer{
+    float: right;
     width: 100%;
     height: 100px;
     background-color: aquamarine;
@@ -69,3 +90,7 @@ footer{
     float: left;
 }
 
+.slide>img {
+    width: 100%;
+    height: 40s0px;
+}
