@@ -10,5 +10,8 @@ function autoslide() {
         $(this).css({left:"-100%"});
     });
     sno ++;
-    
+    if(sno > eno) sno = 0;
+    $(slide[sno]).animate({
+        left: "0"
+    },1000)
 } 

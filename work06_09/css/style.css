@@ -59,7 +59,7 @@ header {
     left: 100%;
 }
 
-.slide > img:last-child {
+.slide > img:first-child{
     left: 0;
 }
   
@@ -93,4 +93,8 @@ footer{
 .slide>img {
     width: 100%;
     height: 40s0px;
+}
+
+.copyright  {
+    
 }
