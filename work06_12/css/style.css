@@ -13,11 +13,6 @@ body {
     color: #333333;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-}
-
 .wrapper {
     position: absolute;
     width: 100%;    
@@ -36,6 +31,10 @@ header {
     width: 200px;
     height: 100px;
     background-color: red;
+}
+.logo > img {
+    width: 100%;
+    height: 100%;
 }
 
 .menu {
@@ -95,7 +94,42 @@ header  label {
 .contents {
     width: 400px;
     height: 100%;
-    background-color: blue;
+}
+
+.banner {
+    width: 400px;
+    height: 170px;
+}
+
+.banner > div {
+    top: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    margin:  0 auto;
+    width: 370px;
+    height: 130px;
+    background: rgb(216, 51, 57);
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.lefts{
+    float: left;
+}
+
+.banner > div > div {
+    float: right;
+    width: 220px;
+}
+
+.banner > div > div > h3, p {
+    padding-top: 10px;
+}
+
+.rights {
+    margin-top: 30px;
+    float: right;
 }
 
 .slide {
@@ -107,6 +141,8 @@ header  label {
 
 
 .slide > img {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: -100%;
@@ -115,10 +151,6 @@ header  label {
 .slide > img:first-child {
     left: 0;
 }
-
-/* .test {
-    object-fit: cover;
-} */
 
 footer {
     position: absolute;
