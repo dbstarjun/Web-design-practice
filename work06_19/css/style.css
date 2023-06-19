@@ -79,6 +79,7 @@ header {
 }
 
 .sub-menu {
+    display: none;
     position: absolute;
     margin-left: 180px; 
     top: 0;

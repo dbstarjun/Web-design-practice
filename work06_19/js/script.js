@@ -1,9 +1,9 @@
 $(".menu").hover(
     function() {
-        $(".sub-menu").stop().slideDown("slow");
+        $(".sub-menu").stop().animate({ width : "toggle"});
     },
     function() {
-        $(".sub-menu").stop().slideUp("slow");
+        $(".sub-menu").stop().animate({ width : "toggle"});
     }
 );
 
