@@ -17,7 +17,6 @@ body {
     position: absolute;
     width: 100%;    
     height: calc(100% - 120px);
-    background-color:yellow;
     display: flex;
 }
 
@@ -98,38 +97,53 @@ header  label {
 
 .banner {
     width: 400px;
-    height: 170px;
+    height: calc(100% / 3 / 2);
 }
 
-.banner > div {
-    top: 20px;
-    border-radius: 10px;
-    position: relative;
+.banner > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.tab {
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: #d10f0f;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box {
+    width: 100%;
+    height: calc(100% - 30px);
+    border-top: 1px solid #d10f0f;
+}
+
+.gallery > .box {
+    justify-content: space-around;
+   display: flex; 
+} 
+
+.news {
+    width: 100%;
+    height: calc(100% / 3);
+}
+
+.gallery {
+    width: 100%;
+    height: calc(100% / 3);
+}
+
+
+.link  {
     display: flex;
-    margin:  0 auto;
-    width: 370px;
-    height: 130px;
-    background: rgb(216, 51, 57);
-    overflow: hidden;
-    justify-content: space-between;
-}
-
-.lefts{
-    float: left;
-}
-
-.banner > div > div {
-    float: right;
-    width: 220px;
-}
-
-.banner > div > div > h3, p {
-    padding-top: 10px;
-}
-
-.rights {
-    margin-top: 30px;
-    float: right;
+    width: 400px;
+    height: calc(100% / 3 / 2);
+    text-align: center;
+    padding-top: 20px;
+    justify-content: space-around;
 }
 
 .slide {
@@ -138,6 +152,8 @@ header  label {
     height: 100%;
     overflow: hidden;
 }
+
+
 
 
 .slide > img {
@@ -165,6 +181,12 @@ footer {
     width: 200px;
     height: 120px;
 }
+
+.flogo  > a > img {
+    width: 100%;
+    height: 100%;
+}
+
 
 .fmenu {
     float: right;

@@ -25,3 +25,7 @@ function autoslide() {
         left: "0"
     },1000)
 }
+
+function openPop() {
+    
+}
