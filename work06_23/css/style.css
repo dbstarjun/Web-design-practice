@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+body {
+    background-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #333333;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;    
+    height: calc(100% - 120px);
+    display: flex;
+}
+
+header {
+    width: 200px;
+    height: 100%;
+    background-color: skyblue;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+.logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 190px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.menu > ul > li {
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background-color: darkred;
+}
+
+.menu > ul > li > a {
+    color: white;
+}
+
+.menu > ul > li:hover a{
+    color: black;
+}
+
+.menu > ul > li:hover {
+    background-color: orange;
+}
+
+
+.menu ul li ul {
+    display: none;
+}
+
+.menu > ul >  li > ul > li {
+    background-color: white;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.menu > ul > li > ul > li:hover {
+    background-color: yellow;
+}
+
+.menu > ul > li > ul > li:hover a{
+    color: red;
+}
+
+header  label {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contents {
+    width: 400px;
+    height: 100%;
+}
+
+.banner {
+    width: 400px;
+    height: calc(100% / 3 / 2);
+}
+
+.banner > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.tab {
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: skyblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: yellow;
+    line-height: 35px;
+}
+
+.box {
+    width: 100%;
+    height: calc(100% - 30px);
+    border-top: 3px solid skyblue;
+    padding-top: 10px;
+}
+
+.gallery > .box {
+    justify-content: space-around;
+   display: flex; 
+} 
+
+.news {
+    width: 100%;
+    height: calc(100% / 3);
+}
+
+
+.news ul li {
+    padding-top: 20px;
+    border-bottom:  1px solid #333333;
+}
+
+.news ul li a {
+    display: block;
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.news ul li:first-child {
+    float: left;
+    width: 300px;
+}
+
+.news ul li:last-child {
+    float: right;
+    width: 100px;
+}
+
+.gallery {
+    width: 100%;
+    height: calc(100% / 3);
+}
+
+
+.link  {
+    display: flex;
+    width: 400px;
+    height: calc(100% / 3 / 2);
+    text-align: center;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.slide {
+    position: relative;
+    width: calc(100% - 600px);
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+.slide > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+.slide > img:first-child {
+    left: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+}
+
+.flogo {
+    float: left;
+    width: 200px;
+    height: 120px;
+}
+
+.flogo  > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.fmenu {
+    float: right;
+    width: 100%;
+    height: 50%;
+}
+
+.fmenu > p {
+    line-height: 50px;
+    color: white;
+}
+
+.copy {
+    float: right;
+    width: 100%;
+    height: 50%;
+}
+
+.copy > p {
+    color: white;
+}       
+
+
+
